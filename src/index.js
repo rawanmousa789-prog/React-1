@@ -4,7 +4,6 @@ import './index.css';
 // import App from './App';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-
 import Home from './pages/Home';
 import Basic from './pages/Basic';
 import Framework from './pages/Framework';
