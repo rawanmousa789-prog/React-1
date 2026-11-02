@@ -14,10 +14,10 @@ export default function Framework() {
       content="Framework"
     />
       </Helmet>
+
       <Header/>
-  <Content data="FrameWork"/>
-  
-  <Footer/>
+      <Content data="FrameWork"/>
+      <Footer/>
     </div>
   )
 }

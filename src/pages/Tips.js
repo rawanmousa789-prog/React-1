@@ -13,14 +13,14 @@ export default function Tips() {
       name="description"
       content="Tips"
     />
-    <style>{`
+    {/* <style>{`
     body{
         background-color:#888;
       }
     `}
       
       
-    </style>
+    </style> */}
       </Helmet>
       <Header/>
   <Content data="Tips"/>

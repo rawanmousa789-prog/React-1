@@ -1,42 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import Home from './pages/Home';
-import Basic from './pages/Basic';
-import Framework from './pages/Framework';
-import Tips from './pages/Tips';
-import {  HelmetProvider } from 'react-helmet-async';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <h1>Not Found</h1>,
-  },
-  {
-    path: "/Basic",
-    element: <Basic />,
-  },
-  {
-    path: "/Framework",
-    element: <Framework />,
-  },
-  {
-    path: "/Tips",
-    element: <Tips />,
-  },
-]);
+import {  HelmetProvider } from 'react-helmet-async';
+import {DataProvider} from "./context/Data";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      {/* <App /> */}
-      <RouterProvider router={router} />
-
+      <DataProvider>
+        <App />
+      </DataProvider>
     </HelmetProvider>
   </React.StrictMode>
 );
